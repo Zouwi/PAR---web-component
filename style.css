@@ -1,0 +1,24 @@
+.compteur {
+    background: rgb(233, 70, 70);
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 20pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 30vh auto auto auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url('/img/hqdefault.jpg');
+    background-size: 200px;
+}
+
+.gif {
+    margin: 40px auto auto auto;
+}
+img {
+    width: 500px;
+}
