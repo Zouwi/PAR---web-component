@@ -12,7 +12,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url('/img/hqdefault.jpg');
+    background-image: url('img/hqdefault.jpg');
     background-size: 200px;
 }
 
