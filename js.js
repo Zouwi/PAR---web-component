@@ -2,7 +2,7 @@ class baliseSpeciale extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
-    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le partiel de M.Lehmann</div>`;
+    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le partiel de dev front</div>`;
     let styles = document.createElement("link");
     styles.setAttribute("rel", "stylesheet");
     styles.setAttribute("href", "style.css");
