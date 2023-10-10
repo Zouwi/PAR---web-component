@@ -2,14 +2,14 @@ class baliseSpeciale extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
-    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le partiel de dev front</div>`;
+    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le partiel de Symfony</div>`;
     let styles = document.createElement("link");
     styles.setAttribute("rel", "stylesheet");
     styles.setAttribute("href", "style.css");
     this.shadow.appendChild(styles);
 
     // Définir la date précise de fin du compte à rebours (par exemple, le 1er janvier 2024 à 15h30)
-    this.endDate = new Date(Date.UTC(2023, 9, 10, 10, 10));
+    this.endDate = new Date(Date.UTC(2023, 9, 11, 8, 01));
 
     // Appeler la fonction updateCountdown pour mettre en place le compte à rebours
     this.updateCountdown();
