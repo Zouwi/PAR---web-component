@@ -2,14 +2,14 @@ class baliseSpeciale extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
-    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le rendu de la SAE</div>`;
+    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le rendu de la SAE<button onclick='playDatMusic()'>Play da good song</button></div>`;
     let styles = document.createElement("link");
     styles.setAttribute("rel", "stylesheet");
     styles.setAttribute("href", "style.css");
     this.shadow.appendChild(styles);
 
     // Définir la date précise de fin du compte à rebours (par exemple, le 1er janvier 2024 à 15h30)
-    this.endDate = new Date(Date.UTC(2024, 0, 29, 8, 0));
+    this.endDate = new Date(Date.UTC(2024, 0, 31, 8, 0));
 
     // Appeler la fonction updateCountdown pour mettre en place le compte à rebours
     this.updateCountdown();
@@ -38,3 +38,9 @@ class baliseSpeciale extends HTMLElement {
   }
 }
 customElements.define("balise-speciale", baliseSpeciale);
+
+function playDatMusic() {
+  // Play the music.mp3 on the page
+  let audio = new Audio("music.mp3");
+  audio.play();
+}
