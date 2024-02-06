@@ -9,7 +9,7 @@ class baliseSpeciale extends HTMLElement {
     this.shadow.appendChild(styles);
 
     // Définir la date précise de fin du compte à rebours (par exemple, le 1er janvier 2024 à 15h30)
-    this.endDate = new Date(Date.UTC(2024, 0, 31, 8, 0));
+    this.endDate = new Date(Date.UTC(2024, 2, 19, 8, 0));
 
     // Appeler la fonction updateCountdown pour mettre en place le compte à rebours
     this.updateCountdown();
