@@ -2,7 +2,7 @@ class baliseSpeciale extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
-    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le rendu de la SAE</div>`;
+    this.shadow.innerHTML = `<div class="compteur">Il reste <span class="countdown"></span> avant le rendu de la SAE<button onclick='playDatMusic()'>Play da good song</button></div>`;
     let styles = document.createElement("link");
     styles.setAttribute("rel", "stylesheet");
     styles.setAttribute("href", "style.css");
@@ -38,3 +38,9 @@ class baliseSpeciale extends HTMLElement {
   }
 }
 customElements.define("balise-speciale", baliseSpeciale);
+
+function playDatMusic() {
+  // Play the music.mp3 on the page
+  let audio = new Audio("music.mp3");
+  audio.play();
+}
